@@ -21,6 +21,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface IkaStateService {
-    @GET("/{rule}")
+    @GET("/{rule}/now")
     fun getResult(@Path("rule") rule: String): Call<IkaState>
 }

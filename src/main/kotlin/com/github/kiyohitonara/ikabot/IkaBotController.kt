@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Kiyohito Nara
+ * Copyright 2017 Kiyohito Nara
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -66,7 +66,7 @@ open class IkaBotController {
         val moshi = Moshi.Builder().build()
 
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://splapi.retrorocket.biz")
+                .baseUrl("https://splapi.fetus.jp")
                 .addConverterFactory(MoshiConverterFactory.create(moshi))
                 .build()
 

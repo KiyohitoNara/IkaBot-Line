@@ -3,10 +3,10 @@ IkaBotはSplatoonのステージ情報をお届けする非公式のLINE BOTで�
 
 <a href="https://line.me/R/ti/p/%40ofk9631s"><img height="36" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
 
-[スプラトゥーンのステージ情報がとれるやつ（非公式）](http://splapi.retrorocket.biz/)を使用させていただいています。
+[splapi.fetus.jp](https://splapi.fetus.jp/)を使用させていただいています。
 
 ## ライセンス
-    Copyright 2016 Kiyohito Nara
+    Copyright 2017 Kiyohito Nara
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

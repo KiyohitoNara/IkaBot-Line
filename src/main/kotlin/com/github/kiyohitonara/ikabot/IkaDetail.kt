@@ -16,11 +16,10 @@
 
 package com.github.kiyohitonara.ikabot
 
-import retrofit2.Call
-import retrofit2.http.GET
-import retrofit2.http.Path
+import com.squareup.moshi.Json
 
-interface IkaStateService {
-    @GET("/{rule}")
-    fun getResult(@Path("rule") rule: String): Call<IkaState>
-}
+data class IkaDetail(
+        val statink: String,
+        @Json(name = "name_id") val nameId: String,
+        @Json(name = "name_en") val nameEn: String,
+        val name: String)

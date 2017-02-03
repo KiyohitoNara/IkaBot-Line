@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Kiyohito Nara
+ * Copyright 2017 Kiyohito Nara
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -16,9 +16,12 @@
 
 package com.github.kiyohitonara.ikabot
 
+import com.squareup.moshi.Json
+
 data class IkaResult(
-        val end: String = "",
+        val rule: String,
+        @Json(name = "rule_ex") val ruleDetail: IkaDetail,
         val maps: List<String> = listOf(),
-        val rule: String = "ナワバリバトル",
-        val start: String = ""
-)
+        @Json(name = "maps_ex") val mapsDetail: List<IkaDetail> = listOf(),
+        val start: String,
+        val end: String)
